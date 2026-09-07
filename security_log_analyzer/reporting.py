@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import csv
 import json
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Sequence
 
@@ -80,7 +80,7 @@ def write_json(
     destination = Path(output_path)
     destination.parent.mkdir(parents=True, exist_ok=True)
     payload = {
-        "generated_at": datetime.now(UTC).isoformat(),
+        "generated_at": datetime.now(timezone.utc).isoformat(),
         **result.to_dict(),
         "parse_errors": [error.to_dict() for error in parse_errors],
     }

@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import re
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from ipaddress import ip_address
 from pathlib import Path
 from typing import Iterable
@@ -31,8 +31,8 @@ def _parse_timestamp(value: str) -> datetime:
         raise ValueError(f"invalid timestamp: {value}") from exc
 
     if timestamp.tzinfo is None:
-        timestamp = timestamp.replace(tzinfo=UTC)
-    return timestamp.astimezone(UTC)
+        timestamp = timestamp.replace(tzinfo=timezone.utc)
+    return timestamp.astimezone(timezone.utc)
 
 
 def parse_line(line: str) -> LogEvent:
