@@ -1,0 +1,4 @@
+severity,rule_id,rule_name,ip_address,start_time,end_time,event_count,usernames,description
+HIGH,BRUTE_FORCE,Possible brute-force attack,203.0.113.25,2026-09-07T10:00:00+00:00,2026-09-07T10:09:00+00:00,10,"admin,guest,root,service,test,user",10 failed logins from one IP within 10 minutes.
+HIGH,CREDENTIAL_STUFFING,Possible credential-stuffing attack,203.0.113.25,2026-09-07T10:00:00+00:00,2026-09-07T10:09:00+00:00,10,"admin,guest,root,service,test,user",6 distinct usernames targeted from one IP within 10 minutes.
+HIGH,SUCCESS_AFTER_FAILURES,Successful login after repeated failures,203.0.113.25,2026-09-07T10:00:00+00:00,2026-09-07T10:10:00+00:00,6,admin,Successful login for 'admin' after 5 failed attempts within 10 minutes.

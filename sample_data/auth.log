@@ -1,0 +1,16 @@
+2026-09-07T09:55:00Z INFO login_success ip=192.0.2.10 user=madalina
+2026-09-07T10:00:00Z WARN login_failed ip=203.0.113.25 user=admin
+2026-09-07T10:01:00Z WARN login_failed ip=203.0.113.25 user=admin
+2026-09-07T10:02:00Z WARN login_failed ip=203.0.113.25 user=root
+2026-09-07T10:03:00Z WARN login_failed ip=203.0.113.25 user=admin
+2026-09-07T10:04:00Z WARN login_failed ip=203.0.113.25 user=guest
+2026-09-07T10:05:00Z WARN login_failed ip=203.0.113.25 user=admin
+2026-09-07T10:06:00Z WARN login_failed ip=203.0.113.25 user=test
+2026-09-07T10:07:00Z WARN login_failed ip=203.0.113.25 user=admin
+2026-09-07T10:08:00Z WARN login_failed ip=203.0.113.25 user=user
+2026-09-07T10:09:00Z WARN login_failed ip=203.0.113.25 user=service
+2026-09-07T10:10:00Z INFO login_success ip=203.0.113.25 user=admin
+2026-09-07T11:00:00Z WARN login_failed ip=198.51.100.44 user=alex
+2026-09-07T11:15:00Z WARN login_failed ip=198.51.100.44 user=alex
+this line is intentionally malformed to demonstrate safe error handling
+

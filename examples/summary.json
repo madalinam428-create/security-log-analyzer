@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-09-07T20:32:34.699299+00:00",
+  "statistics": {
+    "total_events": 14,
+    "failed_logins": 12,
+    "successful_logins": 2,
+    "unique_ip_addresses": 3,
+    "finding_count": 3
+  },
+  "findings": [
+    {
+      "rule_id": "BRUTE_FORCE",
+      "rule_name": "Possible brute-force attack",
+      "severity": "HIGH",
+      "ip_address": "203.0.113.25",
+      "start_time": "2026-09-07T10:00:00+00:00",
+      "end_time": "2026-09-07T10:09:00+00:00",
+      "event_count": 10,
+      "usernames": [
+        "admin",
+        "guest",
+        "root",
+        "service",
+        "test",
+        "user"
+      ],
+      "description": "10 failed logins from one IP within 10 minutes."
+    },
+    {
+      "rule_id": "CREDENTIAL_STUFFING",
+      "rule_name": "Possible credential-stuffing attack",
+      "severity": "HIGH",
+      "ip_address": "203.0.113.25",
+      "start_time": "2026-09-07T10:00:00+00:00",
+      "end_time": "2026-09-07T10:09:00+00:00",
+      "event_count": 10,
+      "usernames": [
+        "admin",
+        "guest",
+        "root",
+        "service",
+        "test",
+        "user"
+      ],
+      "description": "6 distinct usernames targeted from one IP within 10 minutes."
+    },
+    {
+      "rule_id": "SUCCESS_AFTER_FAILURES",
+      "rule_name": "Successful login after repeated failures",
+      "severity": "HIGH",
+      "ip_address": "203.0.113.25",
+      "start_time": "2026-09-07T10:00:00+00:00",
+      "end_time": "2026-09-07T10:10:00+00:00",
+      "event_count": 6,
+      "usernames": [
+        "admin"
+      ],
+      "description": "Successful login for 'admin' after 5 failed attempts within 10 minutes."
+    }
+  ],
+  "parse_errors": [
+    {
+      "line_number": 15,
+      "raw_line": "this line is intentionally malformed to demonstrate safe error handling",
+      "message": "line does not match the expected log format"
+    }
+  ]
+}

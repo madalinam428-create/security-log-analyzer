@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "security-log-analyzer"
+version = "1.0.0"
+description = "Offline Python CLI for detecting suspicious authentication patterns in security logs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Madalina Stoean" }
+]
+keywords = ["cybersecurity", "log-analysis", "python", "blue-team", "siem"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security"
+]
+
+[project.scripts]
+security-log-analyzer = "security_log_analyzer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["security_log_analyzer*"]
+
