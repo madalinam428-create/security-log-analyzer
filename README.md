@@ -30,7 +30,7 @@ Thresholds are configurable from the command line.
 Python 3.10 or newer is required.
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/security-log-analyzer.git
+git clone https://github.com/madalinam428-create/security-log-analyzer.git
 cd security-log-analyzer
 python -m security_log_analyzer sample_data/auth.log \
   --csv-output reports/findings.csv \

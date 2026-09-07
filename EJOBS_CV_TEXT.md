@@ -14,9 +14,9 @@ Python, log analysis, cybersecurity, detection rules, CSV, JSON, unit testing, G
 
 ## Link
 
-Inlocuieste `NUMELE_TAU` cu numele contului tau GitHub:
+Inlocuieste `madalinam428-create` cu numele contului tau GitHub:
 
-https://github.com/NUMELE_TAU/security-log-analyzer
+https://github.com/madalinam428-create/security-log-analyzer
 
 ## Varianta foarte scurta pentru sectiunea Competente
 
